@@ -1,4 +1,4 @@
-#!/usr/bin/env pythno3
+#!/usr/bin/env python3
 """
 this module i don't know what it does nut it's something with variables
 """
