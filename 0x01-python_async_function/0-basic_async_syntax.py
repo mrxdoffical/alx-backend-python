@@ -2,11 +2,9 @@
 import asyncio
 import random
 
-
 """
-this module waits for the time to pass
+This module waits for a random time to pass.
 """
-
 
 async def wait_random(max_delay: int = 10) -> float:
     """
