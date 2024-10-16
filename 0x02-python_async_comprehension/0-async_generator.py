@@ -7,6 +7,7 @@ import asyncio  # Import asyncio for asynchronous operations
 import random  # Import random to generate random numbers
 from typing import AsyncGenerator  # Import AsyncGenerator for type hinting
 
+
 async def async_generator() -> AsyncGenerator[float, None]:
     """
     An asynchronous generator that yields a random float between 0 and 10.
