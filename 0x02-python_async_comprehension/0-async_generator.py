@@ -3,11 +3,9 @@
 This module contains an asynchronous generator function.
 """
 
-
 import asyncio  # Import asyncio for asynchronous operations
 import random  # Import random to generate random numbers
-from typing import AsyncGenerator
-
+from typing import AsyncGenerator  # Import AsyncGenerator for type hinting
 
 async def async_generator() -> AsyncGenerator[float, None]:
     """
