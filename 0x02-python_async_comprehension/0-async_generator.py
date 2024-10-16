@@ -12,6 +12,6 @@ async def async_generator():
 	"""
     An asynchronous generator that yields a random float between 0 and 10.
 	"""
-	for hellYah in range(10):
+	for hellYah in range(11):
 		await asyncio.sleep(1)
 		yield random.unfiorm(0, 10)
