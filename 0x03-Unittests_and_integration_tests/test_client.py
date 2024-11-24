@@ -113,6 +113,19 @@ class TestIntegrationGithubOrgClient(unittest.TestCase):
         """Remove the class fixtures after running all tests."""
         cls.get_patcher.stop()
 
+    def test_public_repos(self):
+        """Integration test for the public_repos method."""
+        test_client = GithubOrgClient("google")
+        self.assertEqual(test_client.public_repos(), self.expected_repos)
+
+    def test_public_repos_with_license(self):
+        """Integration test for the public_repos method with a license."""
+        test_client = GithubOrgClient("google")
+        self.assertEqual(
+            test_client.public_repos(license="apache-2.0"),
+            self.apache2_repos
+        )
+
 
 if __name__ == '__main__':
     unittest.main()
